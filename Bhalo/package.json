@@ -1,0 +1,8 @@
+{
+  "name": "for-umamah",
+  "version": "1.0.0",
+  "description": "An interactive romantic web application dedicated to Umamah",
+  "scripts": {
+    "start": "serve ."
+  }
+}

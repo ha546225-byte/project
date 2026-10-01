@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For the Love of My Life, Umamah ❤️ | 6 Years & Forever</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="An interactive romantic anniversary & love dedication to Umamah. 6 beautiful years, countless memories, and one forever.">
+  <meta name="theme-color" content="#0a070f">
+  
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 3D Three.js Background Canvas Container -->
+  <div id="three-canvas-container" aria-hidden="true"></div>
+
+  <!-- Ambient Cinematic Vignette & Starlight Glow -->
+  <div class="ambient-vignette" aria-hidden="true"></div>
+
+  <!-- Top Floating Navigation & Music Controller Bar -->
+  <header class="top-nav">
+    <a href="#hero" class="nav-brand">
+      <span>Umamah</span>
+      <span class="brand-heart">❤️</span>
+      <span>Forever</span>
+    </a>
+
+    <div class="nav-controls">
+      <!-- Ambient Background Music Toggle -->
+      <button id="music-toggle" class="audio-btn" aria-label="Toggle Romantic Music">
+        <span class="audio-icon-visualizer" aria-hidden="true">
+          <span class="audio-bar"></span>
+          <span class="audio-bar"></span>
+          <span class="audio-bar"></span>
+        </span>
+        <span id="music-label">Play Music 🎶</span>
+      </button>
+
+      <!-- Quick In-Browser Photo Customizer Button -->
+      <button id="btn-photo-tool" class="btn-photo-tool" title="Customize Photos for Umamah">
+        <span>📷</span>
+        <span>My Photos</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Flow -->
+  <main>
+
+    <!-- ====================================================================
+         1. HERO SECTION
+         ==================================================================== -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span>✨</span>
+          <span>6 Years of Pure Devotion</span>
+        </div>
+
+        <!-- Animated Typewriter Headline -->
+        <h1 id="hero-heading" class="hero-title">
+          <span id="typewriter-text" class="hero-title-typewriter"></span>
+          <span class="typewriter-cursor">|</span>
+        </h1>
+
+        <!-- Animated Morphing Nickname Badge -->
+        <div class="hero-nickname-wrapper">
+          <span>My Dearest</span>
+          <span id="nickname-badge" class="nickname-morph-badge">Bhalo 🧸</span>
+        </div>
+
+        <!-- Live Dynamic Real-Time Counter Card -->
+        <div class="hero-counter-card">
+          <div class="counter-primary-text">
+            <span>💫</span>
+            <span>6 Years • 2,190+ Days • Countless Memories • One Forever</span>
+          </div>
+          <div class="counter-timer-grid">
+            <div class="timer-box">
+              <span id="timer-days" class="timer-num">2,191</span>
+              <span class="timer-label">Days</span>
+            </div>
+            <div class="timer-box">
+              <span id="timer-hours" class="timer-num">14</span>
+              <span class="timer-label">Hours</span>
+            </div>
+            <div class="timer-box">
+              <span id="timer-mins" class="timer-num">28</span>
+              <span class="timer-label">Mins</span>
+            </div>
+            <div class="timer-box">
+              <span id="timer-secs" class="timer-num">45</span>
+              <span class="timer-label">Secs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="hero-actions">
+          <a href="#letter" class="btn-primary-romantic">
+            <span>Read My Heart</span>
+            <span>💌</span>
+          </a>
+          <a href="#scrapbook" class="btn-secondary-romantic">
+            <span>Our 6-Year Story</span>
+            <span>📸</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Featured Photo Frame (Glow & Float) -->
+      <div class="hero-visual">
+        <div class="hero-portrait-container">
+          <div class="hero-portrait-glow" aria-hidden="true"></div>
+          <div class="hero-portrait-inner">
+            <!-- 
+              HERO PHOTO SPOT:
+              Replace src="HERO_PHOTO_URL" with your photo link (e.g. assets/hero_photo.jpg or cloud URL).
+              Includes live in-page customizer and graceful fallback.
+            -->
+            <img 
+              id="hero-photo"
+              data-photo-slot="hero-photo"
+              src="assets/hero_photo.jpg" 
+              alt="Umamah — The Love of My Life" 
+              class="hero-portrait-img"
+              loading="eager"
+            >
+          </div>
+          <div class="hero-photo-tag">
+            <span>💍</span>
+            <span>My Forever Fiancée & Queen</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         2. SINCERE HEART-TO-HEART LETTER
+         ==================================================================== -->
+    <section id="letter" class="letter-section" aria-label="Heart-to-Heart Letter to Umamah">
+      <div class="letter-parchment-card">
+        
+        <div class="letter-header">
+          <span class="letter-date">October 1, 2026 • Year Six & For All Eternity</span>
+          <div class="letter-wax-seal" title="Sealed with eternal devotion">
+            <span>U&amp;❤️</span>
+          </div>
+        </div>
+
+        <h2 class="letter-salutation">My Dearest Umamah,</h2>
+
+        <div class="letter-body">
+          <p>
+            You told me you felt I don't love you like I used to.
+          </p>
+          <p>
+            The truth is, 6 years ago I fell in love with you, but today, you are woven into 
+            every dream, every prayer, and every plan I make for our future. 
+            My love didn't fade—<span class="letter-highlight">it grew roots so deep that everything I do is for us.</span>
+          </p>
+          <p>
+            When I work hard, it is to build a shelter worthy of your laughter. 
+            When I look at you, my heart still softens with the exact same awe I felt the very first day. 
+            You are not just my fiancée; you are my home, Umamah.
+          </p>
+        </div>
+
+        <div class="letter-footer">
+          <span class="letter-signoff">Forever Devoted to You,</span>
+          <span class="letter-signature">Your Bhalo 🧸</span>
+        </div>
+
+        <div class="letter-interactive-bar">
+          <button id="btn-letter-burst" class="btn-letter-burst">
+            <span>Read With My Heart</span>
+            <span>💌</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. "6 YEARS OF US" — POLAROID SCRAPBOOK & TIMELINE
+         ==================================================================== -->
+    <section id="scrapbook" class="scrapbook-section" aria-labelledby="scrapbook-heading">
+      <div class="section-header">
+        <span class="section-tag">Cherished Moments</span>
+        <h2 id="scrapbook-heading" class="section-title">
+          6 Years of Us <span class="glow-accent">In Snapshots</span>
+        </h2>
+        <p class="section-subtitle">
+          Every photo carries a piece of my soul. Click any Polaroid to relive our sweetest memories in full view.
+        </p>
+      </div>
+
+      <div class="polaroid-grid">
+        
+        <!-- Polaroid 1: Where it all began -->
+        <article class="polaroid-card" tabindex="0" role="button" aria-label="Polaroid 1: Where it all began">
+          <div class="washi-tape" aria-hidden="true"></div>
+          <div class="polaroid-photo-frame">
+            <!-- PHOTO_YEAR_1_URL -->
+            <img 
+              data-photo-slot="polaroid-1"
+              src="assets/photo_year1.jpg" 
+              alt="Where it all began with Umamah" 
+              class="polaroid-img"
+              loading="lazy"
+            >
+          </div>
+          <p class="polaroid-caption">Where it all began 💫</p>
+          <span class="polaroid-badge">Year 1</span>
+        </article>
+
+        <!-- Polaroid 2: Favorite Date -->
+        <article class="polaroid-card" tabindex="0" role="button" aria-label="Polaroid 2: My favorite smile in the world">
+          <div class="washi-tape gold" aria-hidden="true"></div>
+          <div class="polaroid-photo-frame">
+            <!-- PHOTO_FAVORITE_DATE_URL -->
+            <img 
+              data-photo-slot="polaroid-2"
+              src="assets/photo_date.jpg" 
+              alt="My favorite smile in the world" 
+              class="polaroid-img"
+              loading="lazy"
+            >
+          </div>
+          <p class="polaroid-caption">My favorite smile in the world 🌸</p>
+          <span class="polaroid-badge">Date Night</span>
+        </article>
+
+        <!-- Polaroid 3: Candid Moment -->
+        <article class="polaroid-card" tabindex="0" role="button" aria-label="Polaroid 3: Unfiltered happiness with you">
+          <div class="washi-tape" aria-hidden="true"></div>
+          <div class="polaroid-photo-frame">
+            <!-- PHOTO_CANDID_URL -->
+            <img 
+              data-photo-slot="polaroid-3"
+              src="assets/photo_candid.jpg" 
+              alt="Unfiltered happiness with you" 
+              class="polaroid-img"
+              loading="lazy"
+            >
+          </div>
+          <p class="polaroid-caption">Unfiltered happiness with you 🧸</p>
+          <span class="polaroid-badge">Candid Joy</span>
+        </article>
+
+        <!-- Polaroid 4: Recent & Forever -->
+        <article class="polaroid-card" tabindex="0" role="button" aria-label="Polaroid 4: 6 years down, forever to go">
+          <div class="washi-tape gold" aria-hidden="true"></div>
+          <div class="polaroid-photo-frame">
+            <!-- PHOTO_RECENT_URL -->
+            <img 
+              data-photo-slot="polaroid-4"
+              src="assets/photo_recent.jpg" 
+              alt="6 years down, forever to go" 
+              class="polaroid-img"
+              loading="lazy"
+            >
+          </div>
+          <p class="polaroid-caption">6 years down, forever to go 💍</p>
+          <span class="polaroid-badge">Forever</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. INTERACTIVE 3D TILT NICKNAME CARDS
+         ==================================================================== -->
+    <section id="nicknames" class="nicknames-section" aria-labelledby="nicknames-heading">
+      <div class="section-header">
+        <span class="section-tag">Pet Names & Meanings</span>
+        <h2 id="nicknames-heading" class="section-title">
+          The Many Names of <span class="glow-accent">My Queen</span>
+        </h2>
+        <p class="section-subtitle">
+          Hover and tilt to explore each card. Tap any card to unlock the quiet secret why I call you this.
+        </p>
+      </div>
+
+      <div class="nicknames-grid">
+        
+        <!-- 1. Bhalo 🧸 -->
+        <div class="nickname-tilt-card" tabindex="0" role="button" aria-label="Bhalo card">
+          <div class="card-glare" aria-hidden="true"></div>
+          <div class="nickname-avatar-frame">
+            <!-- BHALO_PHOTO_URL -->
+            <img 
+              data-photo-slot="card-bhalo"
+              src="assets/card_bhalo.jpg" 
+              alt="Bhalo" 
+              class="nickname-avatar-img"
+              loading="lazy"
+            >
+          </div>
+          <h3 class="nickname-badge-title">Bhalo 🧸</h3>
+          <p class="nickname-desc">
+            The one who brings pure warmth, comfort, and peace to my craziest days.
+          </p>
+          <div class="nickname-secret-toggle">
+            <span>Tap to reveal my secret thought</span>
+            <span>✨</span>
+          </div>
+          <div class="nickname-secret-content">
+            "Whenever life gets loud and exhausting, just thinking of your soft voice makes my entire soul relax. You are my safe place."
+          </div>
+        </div>
+
+        <!-- 2. Mera Bacha 🍼 -->
+        <div class="nickname-tilt-card" tabindex="0" role="button" aria-label="Mera Bacha card">
+          <div class="card-glare" aria-hidden="true"></div>
+          <div class="nickname-avatar-frame">
+            <!-- BACHA_PHOTO_URL -->
+            <img 
+              data-photo-slot="card-bacha"
+              src="assets/card_bacha.jpg" 
+              alt="Mera Bacha" 
+              class="nickname-avatar-img"
+              loading="lazy"
+            >
+          </div>
+          <h3 class="nickname-badge-title">Mera Bacha 🍼</h3>
+          <p class="nickname-desc">
+            Because seeing you pout breaks my heart, and making you smile is my lifelong mission.
+          </p>
+          <div class="nickname-secret-toggle">
+            <span>Tap to reveal my secret thought</span>
+            <span>✨</span>
+          </div>
+          <div class="nickname-secret-content">
+            "Your innocent sweet expressions are my greatest weakness. I will pamper you, protect you, and cherish you forever."
+          </div>
+        </div>
+
+        <!-- 3. Meri Pathani ✨ -->
+        <div class="nickname-tilt-card" tabindex="0" role="button" aria-label="Meri Pathani card">
+          <div class="card-glare" aria-hidden="true"></div>
+          <div class="nickname-avatar-frame">
+            <!-- PATHANI_PHOTO_URL -->
+            <img 
+              data-photo-slot="card-pathani"
+              src="assets/card_pathani.jpg" 
+              alt="Meri Pathani" 
+              class="nickname-avatar-img"
+              loading="lazy"
+            >
+          </div>
+          <h3 class="nickname-badge-title">Meri Pathani ✨</h3>
+          <p class="nickname-desc">
+            For your fierce pride, your graceful soul, and that cute stubbornness I will never get tired of.
+          </p>
+          <div class="nickname-secret-toggle">
+            <span>Tap to reveal my secret thought</span>
+            <span>✨</span>
+          </div>
+          <div class="nickname-secret-content">
+            "You carry yourself with a regal elegance and strength that makes me so endlessly proud to stand beside you."
+          </div>
+        </div>
+
+        <!-- 4. Meri Zanani 💍 -->
+        <div class="nickname-tilt-card" tabindex="0" role="button" aria-label="Meri Zanani card">
+          <div class="card-glare" aria-hidden="true"></div>
+          <div class="nickname-avatar-frame">
+            <!-- ZANANI_PHOTO_URL -->
+            <img 
+              data-photo-slot="card-zanani"
+              src="assets/card_zanani.jpg" 
+              alt="Meri Zanani" 
+              class="nickname-avatar-img"
+              loading="lazy"
+            >
+          </div>
+          <h3 class="nickname-badge-title">Meri Zanani 💍</h3>
+          <p class="nickname-desc">
+            My fiancé, my queen, and soon my wife. The only one whose hand I will hold forever.
+          </p>
+          <div class="nickname-secret-toggle">
+            <span>Tap to reveal my secret thought</span>
+            <span>✨</span>
+          </div>
+          <div class="nickname-secret-content">
+            "Every single morning I thank Allah that you said yes. I cannot wait to put that ring on your finger and call you my wife."
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. INTERACTIVE "OPEN WHEN YOU NEED LOVE" JAR
+         ==================================================================== -->
+    <section id="love-jar" class="love-jar-section" aria-labelledby="jar-heading">
+      <div class="section-header">
+        <span class="section-tag">Endless Affection</span>
+        <h2 id="jar-heading" class="section-title">
+          "Open When You Need Love" <span class="glow-accent">Jar</span>
+        </h2>
+        <p class="section-subtitle">
+          Whenever you ever doubt for a single second how precious you are to me, tap this glowing jar to draw a note from my heart.
+        </p>
+      </div>
+
+      <!-- Interactive 3D Jar Graphic -->
+      <div id="jar-stage" class="jar-interactive-stage" role="button" tabindex="0" aria-label="Tap glowing jar to draw love note">
+        <div class="jar-container-graphic">
+          <div class="jar-cork-lid"></div>
+          <div class="jar-ribbon-tag">For Umamah</div>
+          <div class="jar-floating-hearts" aria-hidden="true">
+            <span class="inner-heart">💌</span>
+            <span class="inner-heart">💖</span>
+            <span class="inner-heart">✨</span>
+            <span class="inner-heart">🌸</span>
+          </div>
+        </div>
+        <div class="jar-tap-prompt">
+          <span>✨ Tap Jar to Draw Love Note</span>
+        </div>
+      </div>
+
+      <!-- Pop-out Love Note Display Card -->
+      <div id="jar-note-card" class="jar-note-display hidden" aria-live="polite">
+        <div class="note-badge">From My Heart to Yours</div>
+        <blockquote id="jar-quote-text" class="note-quote">
+          “Did you forget? You're the prettiest girl in the world when you smile.”
+        </blockquote>
+        <div class="note-actions">
+          <button id="btn-draw-again" class="btn-draw-again">
+            <span>Draw Another Note 💌</span>
+          </button>
+        </div>
+        <p class="notes-tracker-text" style="margin-top: 1rem;">
+          Love Notes Opened: <strong id="notes-read-count">0</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. PLAYFUL "MOOD LIFTER" WIDGET
+         ==================================================================== -->
+    <section id="mood-lifter" class="mood-lifter-section" aria-labelledby="mood-heading">
+      <div class="mood-card">
+        
+        <span class="section-tag">Mood Lifter</span>
+        <h2 id="mood-heading" class="mood-question">
+          Umamah, are you still mad at me? 🥺
+        </h2>
+        <p class="mood-subtitle">
+          Be completely honest... but remember how much your Bhalo adores you!
+        </p>
+
+        <div class="mood-button-arena">
+          <div id="tease-toast" class="tease-toast-bubble" aria-hidden="true">
+            Are you sure? 🥺
+          </div>
+
+          <!-- Yes, still mad (Elusive dodging button) -->
+          <button id="btn-mad" class="btn-mad" aria-label="Yes, still mad">
+            Yes, still mad 😤
+          </button>
+
+          <!-- Okay, I love you too (Triumphant button) -->
+          <button id="btn-love" class="btn-love" aria-label="Okay, I love you too">
+            <span>Okay, I love you too ❤️</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       7. FINAL FOOTER & INTERACTIVE LOVE PULSER
+       ==================================================================== -->
+  <footer class="app-footer">
+    <p class="footer-quote">
+      “Made with every beat of my heart, just to see you smile. Forever yours, Umamah.”
+    </p>
+
+    <!-- Global Interactive Love Meter -->
+    <div class="love-meter-box">
+      <button id="btn-send-heart" class="btn-send-heart-pulse" aria-label="Send love heartbeat to Umamah">
+        ❤️
+      </button>
+      <div class="love-counter-display">
+        Taps of Love Sent: <strong id="love-counter-val">628</strong>
+      </div>
+    </div>
+
+    <p class="footer-copy">
+      Six Beautiful Years • 2020 – 2026 • Dedicated to My Fiancée Umamah
+    </p>
+  </footer>
+
+  <!-- ====================================================================
+       MODALS & OVERLAYS
+       ==================================================================== -->
+
+  <!-- Fullscreen Lightbox Modal for Polaroids -->
+  <div id="polaroid-lightbox" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Memory Photo Lightbox">
+    <div class="lightbox-content">
+      <button id="lightbox-close" class="modal-close-btn" aria-label="Close Lightbox">✕</button>
+      <button id="lightbox-prev" class="lightbox-nav-btn lightbox-prev" aria-label="Previous Photo">‹</button>
+      
+      <div class="lightbox-img-wrapper">
+        <img id="lightbox-image" src="" alt="Umamah Memory Fullscreen" class="lightbox-img">
+      </div>
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+
+      <button id="lightbox-next" class="lightbox-nav-btn lightbox-next" aria-label="Next Photo">›</button>
+    </div>
+  </div>
+
+  <!-- Romantic Promise Modal (Unlocked by "Okay, I love you too") -->
+  <div id="promise-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="promise-modal-title">
+    <div class="promise-modal-card">
+      <button id="promise-close" class="modal-close-btn" aria-label="Close Modal">✕</button>
+
+      <div class="promise-content">
+        <!-- Dedicated Final Couple Photo Spot -->
+        <div class="promise-couple-spot">
+          <!-- FINAL_COUPLE_PHOTO_URL -->
+          <img 
+            data-photo-slot="promise-couple"
+            src="assets/final_couple.jpg" 
+            alt="My Promise to Umamah" 
+            class="promise-couple-img"
+          >
+        </div>
+
+        <h3 id="promise-modal-title" class="promise-title">
+          My Sacred Promise to You, <span>Umamah 💍</span>
+        </h3>
+
+        <div class="vows-list">
+          <div class="vow-item">
+            <span class="vow-icon">🌸</span>
+            <p class="vow-text">
+              <strong>I promise to remind you every single day</strong> how gorgeous, talented, and utterly indispensable you are to my world.
+            </p>
+          </div>
+          <div class="vow-item">
+            <span class="vow-icon">🛡️</span>
+            <p class="vow-text">
+              <strong>I promise to hold your hand tighter</strong> on the hard days than on the easy ones, and never let pride stand in the way of our peace.
+            </p>
+          </div>
+          <div class="vow-item">
+            <span class="vow-icon">🏡</span>
+            <p class="vow-text">
+              <strong>I promise to build our dream life together</strong>, creating a home filled with unconditional warmth, laughter, and your favorite foods.
+            </p>
+          </div>
+          <div class="vow-item">
+            <span class="vow-icon">♾️</span>
+            <p class="vow-text">
+              <strong>I promise that my love will never fade</strong>. 6 years was just our beginning—I choose you today, tomorrow, and for all of our forevers.
+            </p>
+          </div>
+        </div>
+
+        <button id="btn-seal-kiss" class="seal-kiss-btn">
+          <span>Seal With a Kiss 💋</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Quick In-Browser Photo Customizer Drawer -->
+  <aside id="photo-customizer-drawer" class="photo-customizer-drawer" aria-label="Photo Customizer">
+    <div class="customizer-header">
+      <h3 class="customizer-title">📷 Custom Photo Manager</h3>
+      <button id="btn-close-drawer" class="modal-close-btn" aria-label="Close Photo Customizer">✕</button>
+    </div>
+    <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.2rem;">
+      Upload photos from your computer/phone or paste direct URLs. Photos are saved automatically to your device!
+    </p>
+
+    <!-- Slot: Hero -->
+    <div class="customizer-slot-item">
+      <span class="customizer-slot-label">Hero Featured Photo (Portrait):</span>
+      <div class="customizer-input-row">
+        <input type="text" id="input-hero-photo" class="customizer-input" placeholder="Paste image URL or upload...">
+        <button class="btn-upload-file" data-slot-target="hero-photo">Upload</button>
+      </div>
+    </div>
+
+    <!-- Slot: Polaroid 1 -->
+    <div class="customizer-slot-item">
+      <span class="customizer-slot-label">Polaroid 1 (Where it all began):</span>
+      <div class="customizer-input-row">
+        <input type="text" id="input-polaroid-1" class="customizer-input" placeholder="Paste image URL or upload...">
+        <button class="btn-upload-file" data-slot-target="polaroid-1">Upload</button>
+      </div>
+    </div>
+
+    <!-- Slot: Polaroid 2 -->
+    <div class="customizer-slot-item">
+      <span class="customizer-slot-label">Polaroid 2 (Favorite Date):</span>
+      <div class="customizer-input-row">
+        <input type="text" id="input-polaroid-2" class="customizer-input" placeholder="Paste image URL or upload...">
+        <button class="btn-upload-file" data-slot-target="polaroid-2">Upload</button>
+      </div>
+    </div>
+
+    <!-- Slot: Polaroid 3 -->
+    <div class="customizer-slot-item">
+      <span class="customizer-slot-label">Polaroid 3 (Candid Joy):</span>
+      <div class="customizer-input-row">
+        <input type="text" id="input-polaroid-3" class="customizer-input" placeholder="Paste image URL or upload...">
+        <button class="btn-upload-file" data-slot-target="polaroid-3">Upload</button>
+      </div>
+    </div>
+
+    <!-- Slot: Polaroid 4 -->
+    <div class="customizer-slot-item">
+      <span class="customizer-slot-label">Polaroid 4 (Recent & Forever):</span>
+      <div class="customizer-input-row">
+        <input type="text" id="input-polaroid-4" class="customizer-input" placeholder="Paste image URL or upload...">
+        <button class="btn-upload-file" data-slot-target="polaroid-4">Upload</button>
+      </div>
+    </div>
+
+    <!-- Slot: Nickname Bhalo -->
+    <div class="customizer-slot-item">
+      <span class="customizer-slot-label">Card: Bhalo 🧸 Photo:</span>
+      <div class="customizer-input-row">
+        <input type="text" id="input-card-bhalo" class="customizer-input" placeholder="Paste image URL or upload...">
+        <button class="btn-upload-file" data-slot-target="card-bhalo">Upload</button>
+      </div>
+    </div>
+
+    <!-- Slot: Nickname Bacha -->
+    <div class="customizer-slot-item">
+      <span class="customizer-slot-label">Card: Mera Bacha 🍼 Photo:</span>
+      <div class="customizer-input-row">
+        <input type="text" id="input-card-bacha" class="customizer-input" placeholder="Paste image URL or upload...">
+        <button class="btn-upload-file" data-slot-target="card-bacha">Upload</button>
+      </div>
+    </div>
+
+    <!-- Slot: Nickname Pathani -->
+    <div class="customizer-slot-item">
+      <span class="customizer-slot-label">Card: Meri Pathani ✨ Photo:</span>
+      <div class="customizer-input-row">
+        <input type="text" id="input-card-pathani" class="customizer-input" placeholder="Paste image URL or upload...">
+        <button class="btn-upload-file" data-slot-target="card-pathani">Upload</button>
+      </div>
+    </div>
+
+    <!-- Slot: Nickname Zanani -->
+    <div class="customizer-slot-item">
+      <span class="customizer-slot-label">Card: Meri Zanani 💍 Photo:</span>
+      <div class="customizer-input-row">
+        <input type="text" id="input-card-zanani" class="customizer-input" placeholder="Paste image URL or upload...">
+        <button class="btn-upload-file" data-slot-target="card-zanani">Upload</button>
+      </div>
+    </div>
+
+    <!-- Slot: Promise Couple -->
+    <div class="customizer-slot-item">
+      <span class="customizer-slot-label">Promise Modal Couple Photo:</span>
+      <div class="customizer-input-row">
+        <input type="text" id="input-promise-couple" class="customizer-input" placeholder="Paste image URL or upload...">
+        <button class="btn-upload-file" data-slot-target="promise-couple">Upload</button>
+      </div>
+    </div>
+
+    <div class="customizer-actions">
+      <button id="btn-reset-photos" class="btn-reset-photos">Reset to Art</button>
+      <button id="btn-save-photos" class="btn-save-photos">Save Changes ❤️</button>
+    </div>
+  </aside>
+
+  <!-- External & Local JavaScript Libraries -->
+  <script src="js/three.min.js"></script>
+  <script src="js/confetti.min.js"></script>
+
+  <!-- Application Logic Modules -->
+  <script src="js/three-bg.js"></script>
+  <script src="js/audio-player.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
